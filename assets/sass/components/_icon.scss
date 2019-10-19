@@ -54,6 +54,7 @@
 			&:hover {
 				&:before {
 					background-color: _palette(accent1);
+					cursor: pointer;
 				}
 			}
 
@@ -63,7 +64,4 @@
 				}
 			}
 		}
-	}
-	a:hover {
-		cursor: pointer;
 	}

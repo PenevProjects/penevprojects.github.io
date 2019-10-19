@@ -10,12 +10,16 @@ function replaceAndCopy() {
 	var email = document.createElement("input");
 	email.id = "email-text";
 	email.type = "text";
-	email.value = "kaloyan@penev.me";
+	email.value = "kdpenev@gmail.com";
 	email.readOnly = true;
 	icon.parentNode.replaceChild(email, icon);
+	var licopy = document.createElement("li");
+	var copy = document.createElement("a");
+	copy.class = "icon solid alt fa-copy";
+	licopy.appendChild(copy);
+	document.getElementsByClass("icons").appendChild(licopy);
 	email.select();
-	email.setSelectionRange(0, 99999)
-	document.execCommand("copy");
+	email.setSelectionRange(0, 99999);
 }
 
 
