@@ -1,5 +1,5 @@
 #404 error
-ErrorDocument 404 /oh-no.html
+ErrorDocument 404 /404.html
 
 # mod_rewrite starts here
 
