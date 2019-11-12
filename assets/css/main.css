@@ -2246,7 +2246,16 @@ button,
 
 /* Main */
 #main {
-  background-color: #2a2f4a; }
+  background-color: #2a2f4a;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  background-image: url("../../images/logobg.png");
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
   #main > * {
     border-top: solid 1px rgba(212, 212, 255, 0.1); }
     #main > *:first-child {

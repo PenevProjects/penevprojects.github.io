@@ -5,21 +5,29 @@
 */
 
 
-function replaceAndCopy() {
+function replaceIcons() {
 	var icon = document.getElementById("email-icon");
 	var email = document.createElement("input");
 	email.id = "email-text";
 	email.type = "text";
 	email.value = "kdpenev@gmail.com";
 	email.readOnly = true;
+	email.style.width = "125%";
 	icon.parentNode.replaceChild(email, icon);
+
 	var licopy = document.createElement("li");
 	var copy = document.createElement("a");
-	copy.class = "icon solid alt fa-copy";
+	copy.className = "icon solid alt fa-copy";
+	copy.onclick = function copyText() {
+		var emailField = document.getElementById("email-text");
+		emailField.select();
+		emailField.setSelectionRange(0, 99999);
+		document.execCommand("copy");
+		alert("Copied: " + emailField.value);
+	};
 	licopy.appendChild(copy);
-	document.getElementsByClass("icons").appendChild(licopy);
-	email.select();
-	email.setSelectionRange(0, 99999);
+	iconlist = document.getElementById("footericons");
+	iconlist.insertBefore(licopy, iconlist.childNodes[4]);
 }
 
 
