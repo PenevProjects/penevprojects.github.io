@@ -23,6 +23,12 @@
 			}
 
 			@include inner;
+			@include breakpoint('<=small') {
+				@include vendor('background-image', 'url("../../images/logobgphone.png")');
+			}
+			@include breakpoint('<=xsmall') {
+				@include vendor('background-image', 'url("../../images/logobgphnoe.png")');
+			}
 		}
 
 		&.alt {

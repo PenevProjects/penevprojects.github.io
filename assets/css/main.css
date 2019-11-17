@@ -2269,6 +2269,12 @@ button,
         #main > * > .inner {
           padding: 3em 0 1em 0 ;
           width: calc(100% - 3em); } }
+    @media screen and (max-width: 736px) {
+      #main > * {
+        background-image: url("../../images/logobgphone.png"); } }
+    @media screen and (max-width: 480px) {
+      #main > * {
+        background-image: url("../../images/logobgphnoe.png"); } }
   #main.alt {
     background-color: transparent;
     border-bottom: solid 1px rgba(212, 212, 255, 0.1); }
