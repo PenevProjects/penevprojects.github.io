@@ -996,7 +996,7 @@ button {
       -webkit-transition-delay: 0.25s;
       -ms-transition-delay: 0.25s;
       transition-delay: 0.25s;
-      padding: 2rem 2rem;
+      padding: 2rem 2rem 0.5rem;
       max-height: 40rem;
       overflow: hidden; }
       #header .content .inner > :last-child {
@@ -1083,14 +1083,14 @@ button {
       #header .logo .logo-logosvgwhite:before {
         font-size: 5.5rem; }
     #header .content .inner {
-      padding: 2.5rem 1rem; }
+      padding: 2.5rem 1rem 1.5rem; }
     #header .content p {
       line-height: 1.875; } }
   @media screen and (max-width: 480px) {
     #header {
       padding: 1.5rem 0; }
       #header .content .inner {
-        padding: 2.5rem 0; }
+        padding: 2.5rem 0 1.5rem; }
       #header .content p {
         font-size: 1.2rem; }
       #header nav ul {
