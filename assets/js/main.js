@@ -4,6 +4,14 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+function copyText() {
+		var emailField = document.getElementById("email-text");
+		emailField.select();
+		emailField.setSelectionRange(0, 99999);
+		document.execCommand("copy");
+		alert("Copied: " + emailField.value);
+}
+
 (function($) {
 
 	var	$window = $(window),
