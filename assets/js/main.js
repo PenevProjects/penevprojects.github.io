@@ -209,6 +209,11 @@ function copyText() {
 			$main._hide = function(addState) {
 
 				var $article = $main_articles.filter('.active');
+				// Stop all iframes from playing
+				$("iframe").each(function() { 
+					var src= $(this).attr('src');
+					$(this).attr('src',src);  
+				});
 
 				// Article not visible? Bail.
 					if (!$body.hasClass('is-article-visible'))
@@ -269,11 +274,6 @@ function copyText() {
 							$article.hide();
 							$main.hide();
 															
-							// Stop all iframes from playing
-							$("iframe").each(function() { 
-								var src= $(this).attr('src');
-								$(this).attr('src',src);  
-							});
 
 						// Show footer, header.
 							$footer.show();
