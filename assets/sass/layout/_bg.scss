@@ -8,6 +8,10 @@
 
 	#bg {
 		@include vendor('transform', 'scale(1.0)');
+		@include vendor('display', 'flex');
+		@include vendor('flex-direction', 'column');
+		@include vendor('align-items', 'center');
+		@include vendor('justify-content', 'center');
 		-webkit-backface-visibility: hidden;
 		position: fixed;
 		top: 0;
@@ -15,6 +19,10 @@
 		width: 100%;
 		height: 100vh;
 		z-index: 1;
+
+		#loading-spinner {
+			z-index: 9999;
+		}
 
 		&:before, &:after {
 			content: '';
@@ -29,8 +37,7 @@
 		&:before {
 			@include vendor('transition', 'background-color #{_duration(bg)} ease-in-out');
 			@include vendor('transition-delay', '#{_duration(intro)}');
-			background-image:		linear-gradient(to top, #{_palette(bg-overlay)}, #{_palette(bg-overlay)}),
-									url('../../images/overlay.png');
+			background-image:		url('../../images/bg.png');
 			background-size:		auto,
 									256px 256px;
 			background-position:	center,
@@ -46,7 +53,7 @@
 				'transform #{_duration(article)} ease-in-out',
 				'filter #{_duration(article)} ease-in-out'
 			));
-			background-image:		url('../../images/bg.jpg');
+			background-image:		url('../../images/bg.png');
 			background-position:	center;
 			background-size:		cover;
 			background-repeat:		no-repeat;

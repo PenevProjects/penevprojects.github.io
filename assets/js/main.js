@@ -12,6 +12,13 @@ function copyText() {
 		document.execCommand("copy");
 }
 
+$(window).on('load', function () {
+	$("#loading-spinner").fadeOut('fast');
+});
+// window.addEventListener('load', (event) => {
+// 	 $('#loader').fadeOut();
+//   });
+
 (function($) {
 
 	var	$window = $(window),
@@ -413,3 +420,5 @@ function copyText() {
 					});
 
 })(jQuery);
+
+
