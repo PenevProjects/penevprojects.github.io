@@ -22,6 +22,10 @@
 
 		#loading-spinner {
 			z-index: 9999;
+			content: url("../../images/loading-infinity.svg");
+			@include breakpoint('<=small') {
+				content: url("../../images/loading-ripple.svg");
+			}
 		}
 
 		&:before, &:after {

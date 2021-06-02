@@ -879,7 +879,11 @@ button {
   height: 100vh;
   z-index: 1; }
   #bg #loading-spinner {
-    z-index: 9999; }
+    z-index: 9999;
+    content: url("../../images/loading-infinity.svg"); }
+    @media screen and (max-width: 736px) {
+      #bg #loading-spinner {
+        content: url("../../images/loading-ripple.svg"); } }
   #bg:before, #bg:after {
     content: '';
     display: block;
