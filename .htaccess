@@ -13,8 +13,3 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 
 RewriteRule ^(.*)$ $1.html [NC,L]
 
-# check for file in directory with .pdf extension
-
-RewriteCond %{REQUEST_FILENAME}\.pdf -f
-
-RewriteRule ^(.*)$ $1.pdf [NC,L]
