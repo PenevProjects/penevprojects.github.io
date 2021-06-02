@@ -74,7 +74,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #1b1f22; }
+  background: black; }
   body.is-preload *, body.is-preload *:before, body.is-preload *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
@@ -331,7 +331,7 @@ select {
   text-overflow: ellipsis; }
   select option {
     color: #ffffff;
-    background: #1b1f22; }
+    background: black; }
   select:focus::-ms-value {
     background-color: transparent; }
   select::-ms-expand {
@@ -407,7 +407,7 @@ input[type="radio"] {
   input[type="radio"]:checked + label:before {
     background: #ffffff !important;
     border-color: #ffffff !important;
-    color: #1b1f22;
+    color: black;
     content: '\f00c'; }
   input[type="checkbox"]:focus + label:before,
   input[type="radio"]:focus + label:before {
@@ -828,7 +828,7 @@ button,
   button.primary,
   .button.primary {
     background-color: #ffffff;
-    color: #1b1f22 !important;
+    color: black !important;
     font-weight: 600; }
   input[type="submit"].disabled, input[type="submit"]:disabled,
   input[type="reset"].disabled,
@@ -892,20 +892,6 @@ button {
     left: 0;
     width: 100%;
     height: 100%; }
-  #bg:before {
-    -moz-transition: background-color 2.5s ease-in-out;
-    -webkit-transition: background-color 2.5s ease-in-out;
-    -ms-transition: background-color 2.5s ease-in-out;
-    transition: background-color 2.5s ease-in-out;
-    -moz-transition-delay: 0.75s;
-    -webkit-transition-delay: 0.75s;
-    -ms-transition-delay: 0.75s;
-    transition-delay: 0.75s;
-    background-image: url("../../images/bg.png");
-    background-size: auto, 256px 256px;
-    background-position: center, center;
-    background-repeat: no-repeat, repeat;
-    z-index: 2; }
   #bg:after {
     -moz-transform: scale(1.125);
     -webkit-transform: scale(1.125);
@@ -986,10 +972,6 @@ button {
   -webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
   -ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
   transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-  background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-  background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-  background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-  background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
   max-width: 100%;
   text-align: center; }
   #header > * {
@@ -1193,7 +1175,7 @@ button {
     position: relative;
     width: 40rem;
     max-width: 100%;
-    background-color: rgba(27, 31, 34, 0.85);
+    background-color: rgba(0, 0, 0, 0.85);
     border-radius: 4px;
     opacity: 0; }
     #main article.active {
