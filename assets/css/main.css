@@ -64,11 +64,9 @@ input, select, textarea {
 /* Basic */
 @-ms-viewport {
   width: device-width; }
-
 @media screen and (max-width: 480px) {
   html, body {
     min-width: 320px; } }
-
 html {
   box-sizing: border-box; }
 
@@ -173,10 +171,10 @@ h6 {
   h1 {
     font-size: 1.75rem;
     line-height: 1.4; }
+
   h2 {
     font-size: 1.25em;
     line-height: 1.5; } }
-
 sub {
   font-size: 0.8rem;
   position: relative;
@@ -882,9 +880,9 @@ button {
     -ms-transition-delay: 0.75s;
     transition-delay: 0.75s;
     background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-    background-size: auto, 256px 256px;
-    background-position: center, center;
-    background-repeat: no-repeat, repeat;
+    background-size: auto, 256px 256px;
+    background-position: center, center;
+    background-repeat: no-repeat, repeat;
     z-index: 2; }
   #bg:after {
     -moz-transform: scale(1.125);
@@ -910,7 +908,7 @@ button {
     -ms-filter: blur(0.2rem);
     filter: blur(0.2rem); }
   body.is-preload #bg:before {
-    background-color: #000000; }
+    background-color: #131313; }
 
 /* Wrapper */
 #wrapper {
@@ -1255,3 +1253,5 @@ button {
     opacity: 0; }
   body.is-preload #footer {
     opacity: 0; }
+
+/*# sourceMappingURL=main.css.map */

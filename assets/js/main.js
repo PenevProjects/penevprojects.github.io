@@ -10,7 +10,6 @@ function copyText() {
 		emailField.select();
 		emailField.setSelectionRange(0, 99999);
 		document.execCommand("copy");
-		alert("Copied: " + emailField.value);
 }
 
 (function($) {
