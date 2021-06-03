@@ -75,9 +75,7 @@ html {
 
 body {
   background: #0e0e0e;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  overflow: hidden; }
+  overflow-x: hidden; }
   body.is-preload *, body.is-preload *:before, body.is-preload *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
