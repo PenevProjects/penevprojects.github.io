@@ -30,6 +30,7 @@
 
 	body {
 		background: _palette(bg);
+		overflow-y:hidden;
 
 		// Stops initial animations until page loads.
 			&.is-preload {

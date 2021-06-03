@@ -74,7 +74,8 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: black; }
+  background: #0e0e0e;
+  overflow-y: hidden; }
   body.is-preload *, body.is-preload *:before, body.is-preload *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
@@ -331,7 +332,7 @@ select {
   text-overflow: ellipsis; }
   select option {
     color: #ffffff;
-    background: black; }
+    background: #0e0e0e; }
   select:focus::-ms-value {
     background-color: transparent; }
   select::-ms-expand {
@@ -407,7 +408,7 @@ input[type="radio"] {
   input[type="radio"]:checked + label:before {
     background: #ffffff !important;
     border-color: #ffffff !important;
-    color: black;
+    color: #0e0e0e;
     content: '\f00c'; }
   input[type="checkbox"]:focus + label:before,
   input[type="radio"]:focus + label:before {
@@ -828,7 +829,7 @@ button,
   button.primary,
   .button.primary {
     background-color: #ffffff;
-    color: black !important;
+    color: #0e0e0e !important;
     font-weight: 600; }
   input[type="submit"].disabled, input[type="submit"]:disabled,
   input[type="reset"].disabled,
@@ -901,10 +902,7 @@ button {
     -webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
     -ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
     transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-    background-image: url("../../images/bg.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: #0e0e0e;
     z-index: 1; }
   body.is-article-visible #bg:after {
     -moz-transform: scale(1.0825);
@@ -916,7 +914,7 @@ button {
     -ms-filter: blur(0.2rem);
     filter: blur(0.2rem); }
   body.is-preload #bg:before {
-    background-color: #131313; }
+    background-color: #0e0e0e; }
 
 /* Wrapper */
 #wrapper {
@@ -1175,7 +1173,7 @@ button {
     position: relative;
     width: 40rem;
     max-width: 100%;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(14, 14, 14, 0.85);
     border-radius: 4px;
     opacity: 0; }
     #main article.active {
