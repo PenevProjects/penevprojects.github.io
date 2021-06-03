@@ -14,10 +14,9 @@ function copyText() {
 
 $(window).on('load', function () {
 	$("#loading-spinner").fadeOut('fast');
+	var x = document.getElementsByTagName("BODY")[0];
+	x.style.overflow = "auto";
 });
-// window.addEventListener('load', (event) => {
-// 	 $('#loader').fadeOut();
-//   });
 
 (function($) {
 
